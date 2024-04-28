@@ -16,8 +16,6 @@ kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: zulu-cs-cluster-namespace-reader
-  annotations:
-    configsync.gke.io/cluster-name-selector: cs-cluster
 rules:
 - apiGroups: [""]
   resources: ["namespaces"]
